@@ -73,7 +73,7 @@ let mnMarried2019TaxBrackets = [
 
 let estimatedAdjustedGrossIncome = max(estimatedGrossIncome - aboveTheLineDeductions, 0)
 
-let deductions = (min(itemizedDeductions, standardDeduction))
+let deductions = (max(itemizedDeductions, standardDeduction))
 
 let taxableIncome = max(estimatedAdjustedGrossIncome - deductions, 0)
 
